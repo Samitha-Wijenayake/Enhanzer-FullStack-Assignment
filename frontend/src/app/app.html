@@ -1,0 +1,22 @@
+<main>
+  <h1>Enhanzer Full Stack Assignment</h1>
+
+  <form (ngSubmit)="addTodo()">
+    <input
+      type="text"
+      name="title"
+      [(ngModel)]="titleInput"
+      placeholder="Enter todo title"
+      required
+    />
+    <button type="submit">Add</button>
+  </form>
+
+  <ul>
+    @for (todo of todos(); track todo.id) {
+      <li>
+        <span [class.completed]="todo.isCompleted">{{ todo.title }}</span>
+      </li>
+    }
+  </ul>
+</main>
