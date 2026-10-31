@@ -1,0 +1,21 @@
+# .NET
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+
+# Angular
+**/node_modules/
+**/dist/
+**/.angular/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE and OS
+.vscode/
+.DS_Store
+Thumbs.db
